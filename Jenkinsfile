@@ -1,9 +1,6 @@
 pipeline {
     agent {
-      dockerfile {
-            dir 'docker'
-            customWorkspace '.'
-         }
+      dockerfile true
     }
     stages {
         stage('build') {
