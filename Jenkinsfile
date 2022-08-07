@@ -9,7 +9,7 @@ pipeline {
                 
             }
             steps {
-                sh 'cd playwright && npx playwright test'
+                sh 'cd playwright'
                 sh 'node --version'
                 sh 'ls'
             }
