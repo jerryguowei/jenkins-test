@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('build') {
             agent {
-                node {
                     docker { image 'node:16.13.1-alpine' }
-                }
+                    customWorkspace 'playwright'
+                
             }
             steps {
                 sh 'pwd'
