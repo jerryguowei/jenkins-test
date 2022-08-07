@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npx playwright test'
+                sh 'npx -v'
             }
         }
     }
