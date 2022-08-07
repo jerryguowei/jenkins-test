@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             agent {
                 docker { 
-                    image 'node:16.13.1-alpine'
+                    image 'mcr.microsoft.com/playwright:v1.24.2-focal'
                 }
                 
             }
