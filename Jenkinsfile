@@ -2,7 +2,7 @@ pipeline {
     agent {
       dockerfile {
             dir 'docker'
-            context "."
+            customWorkspace '.'
          }
     }
     stages {
