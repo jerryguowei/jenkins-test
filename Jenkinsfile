@@ -8,6 +8,9 @@ pipeline {
                 }
                 
             }
+            environment {
+                HOME = "."
+            }
             steps {
                 sh 'pwd'
                 dir('playwright') {
