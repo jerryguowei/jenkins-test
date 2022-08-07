@@ -4,7 +4,6 @@ pipeline {
         stage('build') {
             agent {
                 docker { image 'node:16.13.1-alpine' }
-                customWorkspace
             }
             steps {
                 sh 'pwd'
