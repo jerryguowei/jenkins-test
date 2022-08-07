@@ -1,7 +1,9 @@
-from node:16.13.1-alpine
+from mcr.microsoft.com/playwright:v1.24.2-focal
 
-COPY ../playwright /playwright
+COPY ./playwright /playwright
 
 WORKDIR /playwright
 
-RUN npm install && npx playwright test
+RUN npm install
+
+CMD ["bash"]

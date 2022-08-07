@@ -2,6 +2,7 @@ pipeline {
     agent {
       dockerfile {
             dir 'docker'
+            context "."
          }
     }
     stages {
