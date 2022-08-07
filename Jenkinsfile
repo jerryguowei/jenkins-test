@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('build') {
             agent {
-                    docker { image 'node:16.13.1-alpine' }
-                    customWorkspace 'playwright'
+                docker { 
+                    image 'node:16.13.1-alpine'
+                    customWorkspace 'playwright' 
+                }
                 
             }
             steps {
