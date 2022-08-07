@@ -9,7 +9,7 @@ pipeline {
                 
             }
             environment {
-                HOME = "."
+                HOME = "/ms-playwright"
             }
             steps {
                 sh 'pwd'
