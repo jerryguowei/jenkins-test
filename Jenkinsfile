@@ -9,9 +9,11 @@ pipeline {
                 
             }
             steps {
-                sh 'cd playwright'
-                sh 'node --version'
-                sh 'ls'
+                sh 'pwd'
+                dir('playwright') {
+                    sh 'pwd'
+                    sh 'ls'
+                }
             }
         }
     }
